@@ -8,11 +8,11 @@ const ScreenKeyBoard = () => {
         <div className='grid grid-cols-3 gap-4 px-14 justify-items-center mt-8'>
             {
                 keyboardnumber.map(number => {
-                    return <div className='w-20 h-14 flex items-center justify-center border-2 border-gray-900'>{number}</div>
+                    return <div className='w-20 h-14 flex items-center justify-center border-2 border-gray-900 hover:bg-gray-900 hover:text-white'>{number}</div>
                 })
             }
-            <div className='col-span-2 text-center flex items-center justify-center border-2 border-gray-900 w-48'>стереть</div>
-            <div className='w-20 h-14 flex items-center justify-center border-2 border-gray-900'>0</div>
+            <div className='col-span-2 text-center flex items-center justify-center border-2 border-gray-900 w-48 hover:bg-gray-900 hover:text-white'>стереть</div>
+            <div className='w-20 h-14 flex items-center justify-center border-2 border-gray-900 hover:bg-gray-900 hover:text-white'>0</div>
         </div>
     );
 };
