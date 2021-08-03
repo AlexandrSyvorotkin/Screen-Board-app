@@ -2,12 +2,14 @@ import React from 'react';
 
 const ScreenKeyBoard = () => {
 
-    const keyboardNumber = [1,2,3,4,5,6,7,8,9]
+
+    const keyboardNumbers = [1,2,3,4,5,6,7,8,9]
+
 
     return (
         <div className='grid grid-cols-3 gap-4 justify-items-center mt-8'>
             {
-                keyboardNumber.map((number) => {
+                keyboardNumbers.map((number) => {
                     return <div key={number.toString()} className='w-20 h-14 flex items-center justify-center border-2 border-gray-900 hover:bg-gray-900 hover:text-white'>{number}</div>
                 })
             }
