@@ -10,8 +10,12 @@ const ScreenKeyBoard = () => {
 
     const addNumber = (number) => (e) => {
         setNumberValue(numberValue + number)
-        if (numberValue.length === 12) {
+        if (numberValue.length >=11) {
             setNumberValue(numberValue)
+            setFalseError(false)
+        }
+        else if (numberValue.length <= 10) {
+            setFalseError(true)
         }
     }
 
@@ -49,9 +53,11 @@ const ScreenKeyBoard = () => {
                     0
                 </button>
             </div>
-            <div className='text-red-600 text-center font-bold mt-8'>НЕВЕРНО ВВЕДЕН НОМЕР</div>
 
-            {falseError && <AgreementForm/>}
+            {
+                !falseError ? <AgreementForm/> : <div className='text-red-600 text-center font-bold mt-8'>НЕВЕРНО ВВЕДЕН НОМЕР</div>
+            }
+
             <Button>подтвердить номер</Button>
         </>
     );
