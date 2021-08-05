@@ -11,6 +11,6 @@ html {
 
 @layer components {
     .screenButton {
-        @apply w-20 h-14 flex items-center justify-center border-2 border-gray-900 hover:bg-gray-900 hover:text-white
+        @apply w-24 h-14 flex font-bold items-center justify-center border-2 border-gray-900 hover:bg-gray-900 hover:text-white
     }
 }

@@ -1,15 +1,49 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ScreenKeyBoard from "./ScreenKeyBoard";
+import Button from "../UI/Button";
+import AgreementForm from "./AgreementForm";
+import ApplicationAccepted from "../ApplicationAccepted";
 
 const PhoneNumberBlock = () => {
 
+    const initialState = '+7'
+    const [numberValue, setNumberValue] = useState(initialState)
+    const [falseError, setFalseError] = useState(false)
+
+    const [accepted, setAccepted] = useState(true)
+
+
+    const addNumber = (number) => () => {
+        setNumberValue(numberValue + number)
+        if (numberValue.length >= 11) {
+            setNumberValue(numberValue)
+            setFalseError(false)
+        } else if (numberValue.length <= 10) {
+            setFalseError(true)
+        }
+    }
+
+    const clearNumberInput = () => {
+        setNumberValue(initialState)
+    }
 
     return (
-        <div className='w-1/3 max-w-screen-md bg-phoneBlock px-14 pt-20'>
-            <div className='text-xl text-2xl text-center'>Ввведите ваш номер мобильного телефона</div>
-            <span className='text-center'>и с Вами свяжется наш менеджер для дальшейшей консультации</span>
-            <ScreenKeyBoard/>
-        </div>
+        <>
+            {accepted ? <div className='w-1/3 max-w-screen-md bg-phoneBlock px-14 pt-16'>
+                <div className='flex flex-col'>
+                    <div className='text-xl text-1xl font-bold text-center'>Ввведите ваш номер мобильного телефона</div>
+                    <input type='text' value={numberValue}/>
+                    <span className='text-center'>и с Вами свяжется наш менеджер для дальшейшей консультации</span>
+                </div>
+                <ScreenKeyBoard addNumber={addNumber} clearNumberInput={clearNumberInput} falseError={falseError}/>
+                {
+                    !falseError ? <AgreementForm/> :
+                        <div className='text-red-600 text-center font-bold mt-8'>НЕВЕРНО ВВЕДЕН НОМЕР</div>
+                }
+                <Button>подтвердить номер</Button>
+            </div> : <ApplicationAccepted/>
+            }
+        </>
     );
 };
 
