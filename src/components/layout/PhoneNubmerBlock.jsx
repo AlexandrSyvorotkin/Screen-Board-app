@@ -9,7 +9,7 @@ const PhoneNumberBlock = () => {
     const initialState = '+7'
     const [numberValue, setNumberValue] = useState(initialState)
     const [falseError, setFalseError] = useState(false)
-
+    const [dataAgreement, setDataAgreement] = useState(false)
     const [accepted, setAccepted] = useState(true)
 
 
@@ -23,9 +23,10 @@ const PhoneNumberBlock = () => {
 
     const clearNumberInput = () => {
         setNumberValue(initialState)
+        setFalseError(false)
     }
 
-    const [dataAgreement, setDataAgreement] = useState(false)
+
     const dataProcessingAgreementHandler = () => {
         setDataAgreement(true)
     }
@@ -34,9 +35,11 @@ const PhoneNumberBlock = () => {
         if (numberValue.length === 12 && dataAgreement === true) {
             setAccepted(false)
         }
+        else if (numberValue.length <12 && dataAgreement === true) {
+            setFalseError(true)
+        }
     }
 
-    // стейт для неверно введенного номера: условия - номер не 12 цифр, так же галочка и кнопка.
 
     return (
         <>
@@ -46,7 +49,7 @@ const PhoneNumberBlock = () => {
                         <div className='text-xl text-1xl font-bold text-center text-center'>Ввведите ваш номер мобильного телефона
                         </div>
                         <form>
-                            <input className='border-none bg-phoneBlock text-xl font-bold' type='text' value={numberValue}/>
+                            <input className={!falseError ? 'correctNumber' : 'inCorrectNumber'} type='text' value={numberValue}/>
                         </form>
                         <span className='text-center'>и с Вами свяжется наш менеджер для дальшейшей консультации</span>
                     </div>
@@ -55,7 +58,7 @@ const PhoneNumberBlock = () => {
                         !falseError ? <AgreementForm dataProcessingAgreementHandler={dataProcessingAgreementHandler}/> :
                             <div className='text-red-600 text-center font-bold mt-8'>НЕВЕРНО ВВЕДЕН НОМЕР</div>
                     }
-                    <Button onClick={acceptedNumberHandler}>подтвердить номер</Button>
+                    <Button styles={'acceptButton'} onClick={acceptedNumberHandler}>подтвердить номер</Button>
                 </div> : <ApplicationAccepted/>
             }
         </>
