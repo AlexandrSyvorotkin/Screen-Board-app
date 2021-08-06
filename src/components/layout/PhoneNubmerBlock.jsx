@@ -43,10 +43,10 @@ const PhoneNumberBlock = () => {
             {
                 accepted ? <div className='w-1/3 max-w-screen-md bg-phoneBlock px-14 pt-16'>
                     <div className='flex flex-col'>
-                        <div className='text-xl text-1xl font-bold text-center'>Ввведите ваш номер мобильного телефона
+                        <div className='text-xl text-1xl font-bold text-center text-center'>Ввведите ваш номер мобильного телефона
                         </div>
                         <form>
-                            <input type='text' value={numberValue}/>
+                            <input className='border-none bg-phoneBlock text-xl font-bold' type='text' value={numberValue}/>
                         </form>
                         <span className='text-center'>и с Вами свяжется наш менеджер для дальшейшей консультации</span>
                     </div>
