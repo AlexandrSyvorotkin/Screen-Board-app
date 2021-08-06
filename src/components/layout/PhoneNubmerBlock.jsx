@@ -36,9 +36,7 @@ const PhoneNumberBlock = () => {
         }
     }
 
-
-
-    // accepted нужно ставить в false и поставлена галочка
+    // стейт для неверно введенного номера: условия - номер не 12 цифр, так же галочка и кнопка.
 
     return (
         <>
@@ -47,7 +45,9 @@ const PhoneNumberBlock = () => {
                     <div className='flex flex-col'>
                         <div className='text-xl text-1xl font-bold text-center'>Ввведите ваш номер мобильного телефона
                         </div>
-                        <input type='text' value={numberValue}/>
+                        <form>
+                            <input type='text' value={numberValue}/>
+                        </form>
                         <span className='text-center'>и с Вами свяжется наш менеджер для дальшейшей консультации</span>
                     </div>
                     <ScreenKeyBoard addNumber={addNumber} clearNumberInput={clearNumberInput} falseError={falseError}/>
