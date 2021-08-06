@@ -4,13 +4,13 @@ import Button from "../UI/Button";
 import AgreementForm from "./AgreementForm";
 import ApplicationAccepted from "../ApplicationAccepted";
 
-const PhoneNumberBlock = () => {
+const PhoneNumberBlock = ({accepted, setAccepted}) => {
 
     const initialState = '+7'
     const [numberValue, setNumberValue] = useState(initialState)
     const [falseError, setFalseError] = useState(false)
     const [dataAgreement, setDataAgreement] = useState(false)
-    const [accepted, setAccepted] = useState(true)
+
 
 
     const addNumber = (number) => () => {
