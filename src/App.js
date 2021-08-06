@@ -1,6 +1,6 @@
 import './App.css';
 import PhoneNumberBlock from "./components/layout/PhoneNubmerBlock";
-import React, {useState} from "react";
+import React from "react";
 import Vod from '../src/assets/VOD.png'
 
 function App() {

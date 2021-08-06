@@ -29,7 +29,6 @@ const ScreenKeyBoard = ({addNumber, clearNumberInput}) => {
                     0
                 </button>
             </div>
-
         </>
     );
 };
