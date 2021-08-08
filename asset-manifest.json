@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.33dbf89f.chunk.css",
-    "main.js": "/static/js/main.07bef2ab.chunk.js",
-    "main.js.map": "/static/js/main.07bef2ab.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.00565c77.js",
-    "runtime-main.js.map": "/static/js/runtime-main.00565c77.js.map",
-    "static/js/2.1c54f456.chunk.js": "/static/js/2.1c54f456.chunk.js",
-    "static/js/2.1c54f456.chunk.js.map": "/static/js/2.1c54f456.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.33dbf89f.chunk.css.map": "/static/css/main.33dbf89f.chunk.css.map",
-    "static/js/2.1c54f456.chunk.js.LICENSE.txt": "/static/js/2.1c54f456.chunk.js.LICENSE.txt",
-    "static/media/Promo.0fe36d05.jpg": "/static/media/Promo.0fe36d05.jpg"
+    "main.css": "/Screen-Board-app/static/css/main.33dbf89f.chunk.css",
+    "main.js": "/Screen-Board-app/static/js/main.07bef2ab.chunk.js",
+    "main.js.map": "/Screen-Board-app/static/js/main.07bef2ab.chunk.js.map",
+    "runtime-main.js": "/Screen-Board-app/static/js/runtime-main.6cbd8a21.js",
+    "runtime-main.js.map": "/Screen-Board-app/static/js/runtime-main.6cbd8a21.js.map",
+    "static/js/2.1c54f456.chunk.js": "/Screen-Board-app/static/js/2.1c54f456.chunk.js",
+    "static/js/2.1c54f456.chunk.js.map": "/Screen-Board-app/static/js/2.1c54f456.chunk.js.map",
+    "index.html": "/Screen-Board-app/index.html",
+    "static/css/main.33dbf89f.chunk.css.map": "/Screen-Board-app/static/css/main.33dbf89f.chunk.css.map",
+    "static/js/2.1c54f456.chunk.js.LICENSE.txt": "/Screen-Board-app/static/js/2.1c54f456.chunk.js.LICENSE.txt",
+    "static/media/Promo.0fe36d05.jpg": "/Screen-Board-app/static/media/Promo.0fe36d05.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.00565c77.js",
+    "static/js/runtime-main.6cbd8a21.js",
     "static/js/2.1c54f456.chunk.js",
     "static/css/main.33dbf89f.chunk.css",
     "static/js/main.07bef2ab.chunk.js"
