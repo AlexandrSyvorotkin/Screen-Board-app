@@ -6,4 +6,21 @@
 
 ##Технологии: Reactjs, Tailwind css, React hooks.
 
+# Карта компонентов 
+
+![](images/plugin1/Screenshot_1.png)
+
+# Скриншоты реализации: 
+
+![](images/plugin1/Screenshot_1.png)
+
+![](images/plugin1/Screenshot_1.png)
+
+![](images/plugin1/Screenshot_1.png)
+
+![](images/plugin1/Screenshot_1.png)
+
+# Развернуть проект локально: 1) скачать 2) run install 3) npm run start 
+
+# Задеплоинный вариант 
 
