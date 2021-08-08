@@ -8,17 +8,17 @@
 
 # Карта компонентов 
 
-![](public/screenshots/Screenshots_7.png)
+![](screenshots/scr1.png)
 
 # Скриншоты реализации: 
 
-![](public/screenshots/Screenshots_1.png)
+![](screenshots/scr2.png)
 
-![](public/screenshots/Screenshots_2.png)
+![](screenshots/scr3.png)
 
-![](public/screenshots/Screenshots_3.png)
+![](screenshots/scr4.png)
 
-![](public/screenshots/Screenshots_4.png)
+![](screenshots/scr5.png)
 
 # Развернуть проект локально: 1) скачать 2) run install 3) npm run start 
 
