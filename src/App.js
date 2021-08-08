@@ -10,7 +10,7 @@ function App() {
     return (
         <div className='flex'>
             <PhoneNumberBlock accepted={accepted} setAccepted={setAccepted}/>
-            <PromoZone setAccepted={setAccepted}/>
+            <PromoZone accepted={accepted} setAccepted={setAccepted}/>
         </div>
     );
 }

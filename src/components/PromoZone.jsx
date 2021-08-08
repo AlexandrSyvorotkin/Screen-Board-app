@@ -1,9 +1,10 @@
 import React from 'react';
 import Vod from "../assets/Promo.jpg";
-import BtnClose from '../assets/BtnClose.jpg'
+import BtnCloseW from '../assets/BtnCloseW.jpg'
+import BtnCloseB from '../assets/BtnCloseB.png'
 import Button from "./UI/Button";
 
-const PromoZone = ({setAccepted}) => {
+const PromoZone = ({accepted, setAccepted}) => {
 
     const closeAppHandler = () => {
         setAccepted(true)
@@ -13,7 +14,7 @@ const PromoZone = ({setAccepted}) => {
         <div>
             <img src={Vod} alt=""/>
             <Button onClick={closeAppHandler} styles={'btnClose'}>
-                <img src={BtnClose} alt=""/>
+                <img src={accepted ? BtnCloseW : BtnCloseB} alt=""/>
             </Button>
         </div>
     );
