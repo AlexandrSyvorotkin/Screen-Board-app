@@ -20,7 +20,8 @@
 
 ![](screenshots/scr5.png)
 
-# Развернуть проект локально: 1) скачать 2) run install 3) npm run start 
+# Развернуть проект локально: 
+1) скачать 2) run install 3) npm run start 
 
 # Задеплоинный вариант 
 
